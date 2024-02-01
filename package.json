@@ -1,28 +1,23 @@
 {
-  "name": "lark",
-  "version": "0.1.0",
+  "name": "@aomi/lark-bitable-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "@douyinfe/semi-ui": "^2.51.3",
-    "@lark-base-open/js-sdk": "^0.3.5",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18"
+  "engines": {
+    "node": ">=18"
   },
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "postcss": "^8",
-    "typescript": "^5"
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "prettier": "^3.1.1"
   }
 }
