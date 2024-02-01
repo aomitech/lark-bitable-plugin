@@ -23,7 +23,6 @@ export async function updateTableHeader(headers: Array<Field>) {
 
   for (const header of headers) {
     await table.setField(header.id, {
-      ...(header as IFieldConfig),
       name: header.name,
     });
   }
