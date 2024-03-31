@@ -1,0 +1,17 @@
+{
+  "extends": "@repo/typescript-config/react.json",
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "vite.config.ts"
+  ]
+}
